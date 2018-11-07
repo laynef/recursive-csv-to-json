@@ -3,8 +3,14 @@
 ## Installation
 ```
 npm i -g recursive-csv-to-json
+```
+
+## To View Documentation
+```
 ctj
 ```
+Use '--help' after any command for documentation on it
+
 
 ## Convert JSON to CSV
 Json file must be an array of objects
