@@ -3,7 +3,7 @@ const path = require('path');
 const packager = require('../../../package.json');
 const { kebabCase } = require('lodash');
 
-const keyMapOfCommands = fs.readdirSync(path.join(__dirname)).map(e => e.replace(RegExp('.js', 'ig'), '')).filter(e => e !== 'documentation').reduce((accumulation, file) => {
+const keyMapOfCommands = fs.readdirSync(path.join(__dirname)).map(e => e.slice(0, e.length - 3)).filter(e => e !== 'documentation').reduce((accumulation, file) => {
     const shortcut = file.replace(/([A-Z])/g, ' $1').replace(/^./, function (str) { return str.toUpperCase(); }).split(' ').map(e => e[0]).join('').toLowerCase();
     accumulation[file] = require(path.join(__dirname, file));
     accumulation[shortcut] = require(path.join(__dirname, file));
