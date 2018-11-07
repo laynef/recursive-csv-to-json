@@ -1,6 +1,6 @@
 {
-    "name": "RecursiveCsvToJson",
-    "title": "RecursiveCsvToJson",
+    "name": "recursive-csv-to-json",
+    "title": "recursive-csv-to-json",
     "version": "1.0.0",
     "description": "",
     "scripts": {
