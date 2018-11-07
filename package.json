@@ -1,7 +1,7 @@
 {
     "name": "recursive-csv-to-json",
     "title": "recursive-csv-to-json",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "scripts": {
         "new-command": "bash ./new-command.sh",
